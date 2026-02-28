@@ -1,0 +1,34 @@
+{
+  "placeholderImages": [
+    {
+      "id": "usa-tank",
+      "description": "USA M4 Sherman tank in a battlefield",
+      "imageUrl": "https://picsum.photos/seed/usa-tank/600/400",
+      "imageHint": "tank Sherman"
+    },
+    {
+      "id": "germany-tank",
+      "description": "German Panzer IV tank in desert camouflage",
+      "imageUrl": "https://picsum.photos/seed/ger-tank/600/400",
+      "imageHint": "tank Panzer"
+    },
+    {
+      "id": "ussr-tank",
+      "description": "USSR T-34 tank in snow",
+      "imageUrl": "https://picsum.photos/seed/ussr-tank/600/400",
+      "imageHint": "tank T34"
+    },
+    {
+      "id": "plane-combat",
+      "description": "Fighter plane in a dogfight",
+      "imageUrl": "https://picsum.photos/seed/plane/600/400",
+      "imageHint": "fighter plane"
+    },
+    {
+      "id": "tank-hangar",
+      "description": "Military vehicle in a repair hangar",
+      "imageUrl": "https://picsum.photos/seed/hangar/600/400",
+      "imageHint": "tank hangar"
+    }
+  ]
+}
