@@ -20,13 +20,13 @@ export default function Home() {
           <div className="text-center md:text-left space-y-6 flex-1">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-medium">
               <Compass className="h-4 w-4" />
-              <span>War Thunder Starter Guide</span>
+              <span>War Thunder Guide: Rank I-VIII</span>
             </div>
             <h1 className="font-headline text-5xl md:text-7xl font-black tracking-tighter text-foreground leading-[1.1]">
               Thunder<span className="text-accent">Path</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl font-body leading-relaxed">
-              Master the starter grind. Detailed paths for research, vehicle priorities, and AI-powered combat strategies for every nation.
+              Master the grind from Rank I to Rank VIII. Comprehensive research paths and AI-powered insights for all 10 nations.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
                <MechanicExplainer />
@@ -34,12 +34,12 @@ export default function Home() {
           </div>
           
           <div className="hidden lg:grid grid-cols-2 gap-4 flex-1">
-            <FeatureCard icon={<ShieldCheck className="text-accent" />} title="Survivability" desc="Learn sloped armor & angling" />
+            <FeatureCard icon={<ShieldCheck className="text-accent" />} title="Protection" desc="Rank 1-8 armor analysis" />
             <FeatureCard icon={<Map className="text-accent" />} title="Tactics" desc="Positioning & map flow tips" />
-            <FeatureCard icon={<Trophy className="text-accent" />} title="Efficiency" desc="Best research order for RP" />
+            <FeatureCard icon={<Trophy className="text-accent" />} title="Efficiency" desc="Optimal research paths" />
             <div className="bg-primary/20 p-6 rounded-2xl border border-primary/30 backdrop-blur-md flex flex-col justify-center text-center">
-               <p className="font-bold text-accent text-2xl">Tier I-III</p>
-               <p className="text-xs text-muted-foreground">The Starter Focus</p>
+               <p className="font-bold text-accent text-2xl">Rank VIII</p>
+               <p className="text-xs text-muted-foreground">Top Tier Ready</p>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Home() {
               <h2 className="font-headline text-2xl font-bold flex items-center gap-3">
                 Select Your Nation
               </h2>
-              <p className="text-muted-foreground">Each nation has unique strengths and a distinct early-game meta.</p>
+              <p className="text-muted-foreground">Every nation follows the Rank I-VIII progression system.</p>
             </div>
             <NationSelector 
               selectedId={selectedNationId} 
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
           <div className="text-sm text-muted-foreground text-center md:text-right">
             <p>&copy; {new Date().getFullYear()} ThunderPath Guide. Not affiliated with Gaijin Entertainment.</p>
-            <p className="mt-1">Powered by GenAI for strategic insights.</p>
+            <p className="mt-1">Covering all 10 major nations from Rank I to Rank VIII.</p>
           </div>
         </div>
       </footer>

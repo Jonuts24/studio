@@ -20,15 +20,15 @@ export function GrindPath({ nation }: GrindPathProps) {
         <div className="h-1 flex-1 bg-gradient-to-l from-accent/50 to-transparent" />
       </div>
 
-      <Accordion type="single" collapsible className="w-full space-y-4" defaultValue={nation.stages[0].id}>
+      <Accordion type="single" collapsible className="w-full space-y-4" defaultValue={nation.stages[0]?.id}>
         {nation.stages.map((stage, index) => (
           <AccordionItem 
             key={stage.id} 
             value={stage.id}
             className="border border-border rounded-xl bg-card overflow-hidden transition-all data-[state=open]:shadow-lg"
           >
-            <AccordionTrigger className="px-6 py-5 hover:no-underline">
-              <div className="flex items-center gap-6 text-left">
+            <AccordionTrigger className="px-6 py-5 hover:no-underline text-left">
+              <div className="flex items-center gap-6">
                 <div className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary text-accent font-bold">
                   {index + 1}
                 </div>
@@ -55,7 +55,7 @@ export function GrindPath({ nation }: GrindPathProps) {
 function VehicleProfile({ vehicle, nation }: { vehicle: Vehicle, nation: string }) {
   const RoleIcon = () => {
     if (vehicle.role.toLowerCase().includes('scout')) return <Target className="h-4 w-4" />;
-    if (vehicle.role.toLowerCase().includes('brawler') || vehicle.role.toLowerCase().includes('armor')) return <Shield className="h-4 w-4" />;
+    if (vehicle.role.toLowerCase().includes('brawler') || vehicle.role.toLowerCase().includes('armor') || vehicle.role.toLowerCase().includes('mbt')) return <Shield className="h-4 w-4" />;
     return <Swords className="h-4 w-4" />;
   }
 
@@ -77,7 +77,7 @@ function VehicleProfile({ vehicle, nation }: { vehicle: Vehicle, nation: string 
               <h4 className="font-headline font-bold text-lg truncate">{vehicle.name}</h4>
               <div className="flex gap-2 mt-1">
                 <Badge variant="outline" className="text-[10px] h-5 bg-background border-border">
-                  Tier {vehicle.tier}
+                  Rank {vehicle.rank}
                 </Badge>
                 <Badge variant="secondary" className="text-[10px] h-5">
                   BR {vehicle.br}
