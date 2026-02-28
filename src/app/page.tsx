@@ -26,7 +26,7 @@ export default function Home() {
               Thunder<span className="text-accent">Path</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl font-body leading-relaxed">
-              Master the grind from Rank I to Rank VIII. Comprehensive research paths and AI-powered insights for all 10 nations.
+              Master the grind from Rank I to Rank VIII. Comprehensive research paths and AI-powered insights for all 10 major nations.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
                <MechanicExplainer />
@@ -54,7 +54,7 @@ export default function Home() {
               <h2 className="font-headline text-2xl font-bold flex items-center gap-3">
                 Select Your Nation
               </h2>
-              <p className="text-muted-foreground">Every nation follows the Rank I-VIII progression system.</p>
+              <p className="text-muted-foreground">Explore the progression paths for all 10 nations across Ranks I to VIII.</p>
             </div>
             <NationSelector 
               selectedId={selectedNationId} 
